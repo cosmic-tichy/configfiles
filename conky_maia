@@ -1,0 +1,80 @@
+conky.config = {
+	alignment = 'middle_right',
+	background = true,
+	color2 = '777777',
+	cpu_avg_samples = 2,
+	default_color = 'FFFFFF',
+	double_buffer = true,
+	font = 'Monospace:size=11',
+	gap_x = 25,
+	gap_y = 45,
+	minimum_width = 250,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+	draw_shades=false
+}
+conky.text = [[
+
+${color #16a085}${font Ubuntu:size=11}${alignc}System Information
+                                                                
+${color #556064}${font Monospace:style=Bold:size=11}Name:${color #16a085}${font Ubuntu:style=Bold:size=11}$alignr$nodename
+                                
+${color #556064}${font Monospace:size=11}System Kernel:${color #16a085} ${font Monospace:size=11}$alignr$kernel
+                       
+${color #556064}${font Monospace:size=11}Run Time:${color #16a085} ${font Ubuntu:style=Bold:size=11}$alignr$uptime
+
+${color #556064}${font Monospace:size=11}CPU Frequency:${color #16a085} ${font Ubuntu:style=Bold:size=11}${alignr}${freq} MHz
+
+${color #556064}${font Monospace:size=11}CPU Temperature:${color #16a085} ${font Ubuntu:style=Bold:size=11}${alignr}${acpitemp}°C
+
+${font Monospace:style=Bold:size=10}${color #556064}Processes:${color #16a085}  $processes ${color #556064}Running:${color #16a085} $running_processes
+
+$color$stippled_hr
+
+
+${color #556064}${font Monospace:size=11}${alignc} CPU & MEM ${color}
+${color #556064}${font Monospace:size=11}System Information: ${font Ubuntu:size=10}${alignr}$loadavg
+#${color #556064}${font Monospace:size=10}${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //'}
+#
+
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-1${color #16a085} ${cpubar cpu1 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu1}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-2${color #16a085} ${cpubar cpu2 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu2}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-3${color #16a085} ${cpubar cpu3 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu3}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-4${color #16a085} ${cpubar cpu4 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu4}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-5${color #16a085} ${cpubar cpu5 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu5}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-6${color #16a085} ${cpubar cpu6 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu6}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-7${color #16a085} ${cpubar cpu7 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu7}%
+${color #556064}${font Ubuntu:style=Bold:size=11}CPU-8${color #16a085} ${cpubar cpu8 4,170} ${font Ubuntu:size=10}${color #556064}${alignr}${cpu cpu8}%
+
+
+#${color lightgrey}RAM Usage:$color $mem/$memmax - $memperc% 
+
+${color #556064}${font Ubuntu:size=11}Physical Mem: ${font Ubuntu:size=11}${color #16a085}${alignr}$mem / $memmax ($memperc%)
+$color$stippled_hr
+${color #556064}${font Monospace:size=11}${alignc}Htop ${color}
+${color #556064}${font Monospace:size=12}High CPU ${font Monospace:size=12}$alignr CPU%${font Monospace:size=12} Mem%
+${color #16a085}${font Monospace:size=10}${top name 1}$alignr${top cpu 1}${top mem 1}
+${color #16a085}${font Monospace:size=10}${top name 2}$alignr${top cpu 2}${top mem 2}
+${color #16a085}${font Monospace:size=10}${top name 3}$alignr${top cpu 3}${top mem 3}
+${color #16a085}${font Monospace:size=10}${top name 4}$alignr${top cpu 4}${top mem 4}
+${color #16a085}${font Monospace:size=10}${top name 5}$alignr${top cpu 5}${top mem 5}
+${color #16a085}${font Monospace:size=10}${top name 5}$alignr${top cpu 5}${top mem 6}
+${color #16a085}${font Monospace:size=10}${top name 5}$alignr${top cpu 5}${top mem 7}
+
+
+${color #556064}${font Monospace:size=12}High Memory ${font Monospace:size=12}$alignr CPU%${font Monospace:size=12} Mem%
+${color #16a085}${font Monospace:size=10}${top_mem name 1}$alignr${top_mem cpu 1}${top_mem mem 1}
+${color #16a085}${font Monospace:size=10}${top_mem name 2}$alignr${top_mem cpu 2}${top_mem mem 2}
+${color #16a085}${font Monospace:size=10}${top_mem name 3}$alignr${top_mem cpu 3}${top_mem mem 3}
+${color #16a085}${font Monospace:size=10}${top_mem name 4}$alignr${top_mem cpu 4}${top_mem mem 4}
+${color #16a085}${font Monospace:size=10}${top_mem name 5}$alignr${top_mem cpu 5}${top_mem mem 5}
+${color #16a085}${font Monospace:size=10}${top_mem name 5}$alignr${top_mem cpu 5}${top_mem mem 6}
+${color #16a085}${font Monospace:size=10}${top_mem name 5}$alignr${top_mem cpu 5}${top_mem mem 7}
+
+
+
+]]
