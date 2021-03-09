@@ -1,54 +1,82 @@
-
 [options]
-font = Monospace, FontAwesome 10.5
+allow_bold = true
+#audible_bell = false
+#bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
+clickable_url = true
+dynamic_title = true
+font = Monospace 11
+#fullscreen = true
+#icon_name = terminal
+#mouse_autohide = false
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = xdg-open
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+#scrollbar = off
+
+# ====================================
 [colors]
-# hard contrast: background = #1d2021
-background = #282828
-# soft contrast: background = #32302f
-foreground = #ebdbb2
-foreground_bold = #ebdbb2
 
-# dark0 + gray
-color0 = #282828
-color8 = #928374
+# special
+foreground      = #16a085
+foreground_bold = #16a085
+cursor          = #16a085
+background      = #222d31
 
-# neutral_red + bright_red
-color1 = #cc241d
-color9 = #fb4934
+# black
+color0  = #2b383d
+color8  = #cfb7c6
 
-# neutral_green + bright_green
-color2 = #98971a
-color10 = #b8bb26
+# red
+color1  = #3a4d53
+color9  = #27ae60
 
-# neutral_yellow + bright_yellow
-color3 = #d79921
-color11 = #fabd2f
+# green
+color2  = #3e5259
+color10 = #7b5581
 
-# neutral_blue + bright_blue
-color4 = #458588
-color12 = #83a598
+# yellow
+color3  = #6f93a0
+color11 = #f67400
 
-# neutral_purple + bright_purple
-color5 = #b16286
-color13 = #d3869b
+# blue
+color4  = #91bfd1
+color12 = #9c6000
 
-# neutral_aqua + faded_aqua
-color6 = #689d6a
-color14 = #8ec07c
+# magenta
+color5  = #a8dff3
+color13 = #3daee9
 
-# light4 + light1
-color7 = #a89984
-color15 = #ebdbb2
+# cyan
+color6  = #77d0ef
+color14 = #fdbc4b
 
-# vim: ft=dosini cms=#%s
-
-[hints]
-# font = PragmataPro 13
-# font = PragmataPro 11.25
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-padding = 3
-#border = #3f3f3f
-#border_width = 0.5
+# white
+color7  = #47cdff
+color15 = #80fff9

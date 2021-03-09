@@ -6,10 +6,10 @@
   se:      #98971a;
   fg:      #98971a;
   ac:      #458588;
-  red:     #cc241d;
-  green:   #98971a;
-  yellow:  #98971a;
-  blue:    #98971a;
-  purple:  #b16286;
-  cyan:    #689d6a;
+  red:     #9d0006;
+  green:   #79740e;
+  yellow:  #b57614;
+  blue:    #076678;
+  purple:  #8f3f71;
+  cyan:    #427b58;
 }
